@@ -3,6 +3,7 @@ body{
     padding: 0;
     background: url(background.jpg) no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
   .box{
     width: 100%;
@@ -15,16 +16,16 @@ body{
   }
   .box-img{
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 15em;
+    height: 15em;
   }
   .box h1{
-    font-size: 40px;
+    font-size: 3em;
     letter-spacing: 4px;
     font-weight: 100;
   }
   .box h5{
-    font-size: 20px;
+    font-size: 2em;
     letter-spacing: 3px;
     font-weight: 100;
   }
@@ -37,13 +38,12 @@ body{
   }
   .box li{
     display: inline-block;
-    margin: 6px;
     list-style: none;
   }
   .box li a{
     color: white;
     text-decoration: none;
-    font-size: 60px;
+    font-size: 4em;
     transition: all ease-in-out 250ms;
   }
   .box li a:hover{
@@ -51,5 +51,8 @@ body{
   }
 
   @media only screen and (max-width: 768px) {
-
+    body {
+        width: 100%;
+        fit: all;
+    }
   }
